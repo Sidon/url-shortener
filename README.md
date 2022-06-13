@@ -11,7 +11,17 @@ $ docker-compose up -d --build
 $ docker-compose exec web alembic upgrade head
 ```
 
-### Sanity check:
+### Running unit tests:
+```sh
+$ docker-compose exec web pytest .
+```
+
+### Running tests coverage:
+```sh
+$ docker-compose exec web pytest . --cov . 
+```
+
+### Health check:
 [http://localhost:8004/healthchek](http://localhost:8004/healthchek)
 
 ### API Documentation:
