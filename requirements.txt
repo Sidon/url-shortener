@@ -1,0 +1,13 @@
+validators==0.18.2
+alembic==1.7.1
+fastapi==0.68.1
+sqlmodel==0.0.4
+uvicorn==0.15.0
+requests==2.24.0
+sqlalchemy-utils==0.38.2
+python-dotenv==0.20.0
+urllib3==1.25.8
+
+# Dev dependencies
+isort
+black
