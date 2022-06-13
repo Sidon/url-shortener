@@ -22,7 +22,7 @@ $ docker-compose exec web pytest . --cov .
 ```
 
 ### Health check:
-[http://localhost:8004/healthchek](http://localhost:8004/healthchek)
+[http://localhost:8004/healthcheck](http://localhost:8004/healthcheck)
 
 ### API Documentation:
 [http://localhost:8004/docs](http://localhost:8004/docs)
