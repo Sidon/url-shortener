@@ -1,5 +1,4 @@
 from typing import Optional
-from urllib import parse as parse_url
 
 import validators
 from fastapi import Depends, FastAPI, Request
@@ -39,7 +38,7 @@ def read_root(request: Request, db: Session = Depends(get_db), shortened_url: Op
     user_agent = request.headers["user-agent"].split("/")[0]
 
     if shortened_url:
-        if not validators.url.quote(shortened_url):
+        if not validators.url(shortened_url):
             raise_bad_request(message=data_helper.BAD_URL_MESSAGE)
     else:
         return data_helper.WELLCOME_MESSAGE

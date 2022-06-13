@@ -1,4 +1,4 @@
-validators==0.18.2
+validators==0.20.0
 alembic==1.7.1
 fastapi==0.68.1
 sqlmodel==0.0.4
@@ -9,5 +9,6 @@ python-dotenv==0.20.0
 urllib3==1.25.8
 
 # Dev dependencies
-isort
-black
+isort==5.10.1
+black==22.3.0
+pytest==7.1.2
